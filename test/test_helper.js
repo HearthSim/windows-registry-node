@@ -8,7 +8,7 @@ if (process.env.TEST_MOCKS_ON) {
     });
 }
 
-mockery.registerMock('ffi', require('./mock/ffi'));
+mockery.registerMock('ffi-napi', require('./mock/ffi-napi'));
 
 after(() => {
     mockery.disable();
